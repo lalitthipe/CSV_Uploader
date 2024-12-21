@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <p>Missing values:</p>
+    <div>
+        {{ missing_values|safe }}
+    </div>
+    <p>Descriptive statistics:</p>
+    <div>
+        {{ descriptive_stats|safe }}
+    </div>
+    <p>Data visualization:</p>
+    <div>
+        <img src="data:image/png;base64,{{ plot }}" alt="Data Visualization">
+    </div>
+    <a href="/">Upload another file</a>
+</body>
+</html>
