@@ -27,15 +27,19 @@ A Django-based web application that allows users to upload CSV files, perform da
    If using a virtual environment:
    python -m venv env
    source env/bin/activate   # On Windows: .\env\Scripts\activate
-   pip install requirements
+   pip install django
+   pip install pandas
+   pip install matplotlib
 
    If not using a virtual environment:
-   pip install requirements
+   pip install django
+   pip install pandas
+   pip install matplotlib
 
-3. Run the development server:
+4. Run the development server:
    python manage.py runserver
 
-4. Open your browser and navigate to:
+5. Open your browser and navigate to:
    http://127.0.0.1:8000/
 
 ### Usage
@@ -82,11 +86,13 @@ CSV_UPLOADER/
 
 ## Project Explanation
 
+
 1. Project Overview
 
 a The Django CSV Analysis Web Application is a user-friendly platform designed to simplify the process of analyzing and visualizing data stored in CSV files.
 
 b  It leverages Django for the backend, pandas for data manipulation, and matplotlib for data visualization.
+
 
 2. Key Features
 
@@ -99,6 +105,8 @@ b. Data Analysis:
 c. Data Visualization: Automatically create visual representations of the data, such as histograms or scatter plots.
 
 d. Interactive Web Interface: Results are displayed in a clean, accessible format, making it easy for users to interpret their data.
+
+
 
 3. How It Works
 
@@ -116,6 +124,8 @@ c. Visualization:
 d. Results Display:
    - The analysis and visualizations are presented on a results page.
    - Users can upload another file to analyze more data.
+
+
      
 4. Technology 
 
@@ -129,6 +139,8 @@ d. Visualization: matplotlib (for creating charts and plots)
 
 e. Database: SQLite (for development)
 
+
+
 5. Project Structure
 
 a. analysis: Contains the core logic, including views, templates, and static files.
@@ -141,7 +153,9 @@ d. forms.py: Defines the form for uploading CSV files.
 
 e. settings.py: Configures the Django project, including installed apps and middleware.
 
-5. Purpose
+
+
+6. Purpose
 
 -This project is designed to:
 
